@@ -1,35 +1,84 @@
 @charset "UTF-8";
 /* media query para telas menores que 768px  */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    
-      section#login{
-        width: 85vw;
-    
-    }
-    section#login > div#imagem{
-        float: left;
-        width: 30%;
-        height: 100%;
-    }
-    section#login > #formulario{
-        float: right;
-        width: 70%;
-    }
-}    
-/* media query para telas menores que 1200px */
-@media screen and (min-width: 992px){
-      section#login{
-        width: 950px;
-    
-    }
-    section#login > div#imagem{
-        float: left;
-        width: 50%;
-        height: 100%;
-    }
-    section#login > #formulario{
-        float: right;
-        width: 50%;
+  section#login {
+    width: 85vw;
+  }
+  section#login > div#imagem {
+    float: right;
+    width: 30%;
+    height: 100%;
+  }
+  section#login > #formulario {
+    float: left;
+    width: 70%;
+    margin-top: 30px;
+  }
 
+  form {
+    transform: translateY(50%);
+  }
+
+  div#formulario > h1 {
+    font-size: 2em;
+    transform: translateX(7%);
+  }
+  div#formulario > p {
+    text-align: right;
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  h1, p {
+    transform: translateY(25%);
+  }
+
+  form > input[type="submit"] {
+    margin-right: 14px;
+  }
+
+  form > a.botao {
+    margin-right: 14px;
+  }
+}
+
+/* media  query para telas menores que 1200px */
+@media screen and (min-width: 992px) {
+  section#login {
+    width: 950px;
+  }
+  section#login > div#imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+  }
+  section#login > #formulario {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+  }
+  div#formulario > h1 {
+    font-size: 2em;
+    transform: translateX(7%);
+  }
+  div#formulario > p {
+    font-size: 1em;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+    h1, p {
+      transform: translateY(25%);
     }
+
+    form {
+      transform: translateY(50%);
+    }
+
+  form > input[type="submit"] {
+    margin-right: 12px;
+  }
+
+  form > a.botao {
+    margin-right: 12px;
+  }
 }
